@@ -1,0 +1,252 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Default styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('image.jpg'); /* Specify the URL of your background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    z-index: -1;
+}
+
+header {
+    color: white;
+    padding: 20px; /* Adjust padding as needed */
+    text-align: left; /* Align text to the left */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center vertically */
+    height: 100vh; /* Adjust the height of the header to fill the viewport */
+}
+
+header h1 {
+    margin: 0; /* Remove top margin to eliminate the gap */
+    font-size: 3.5rem;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+nav {
+    background-color: #061147;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.active {
+    background-color: #555;
+}
+
+main {
+    padding: 20px;
+}
+
+main section {
+    margin-bottom: 30px;
+}
+
+main h2 {
+    margin-top: 0;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.learn-more-button {
+    background-color: #3914b1;
+    color: white;
+    border: none;
+    width: 250px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 45px;
+}
+
+.learn-more-button:hover {
+    background-color: #3e8e41;
+}
+
+/* Objectives Section */
+
+.objective-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
+    margin-bottom: -50px; /* Align items to the top */
+}
+
+.box-container {
+    display: flex;
+    flex-direction: column; /* Align boxes vertically */
+    align-items: center; /* Center-align boxes horizontally */
+    margin-top: 20px;
+}
+
+.box {
+    width: 600px;
+    height: 200px;
+    background-color: #ccc;
+    text-align: center;
+    line-height: 100px;
+    font-size: 15px;
+    margin-bottom: 10px; /* Add margin between boxes */
+}
+
+.objectives-text {
+    width: 40%; /* Adjust width as needed */
+    padding: 20px;
+}
+
+.objectives-text h2 {
+    font-size: 50px; /* Increase font size */
+    font-weight: italic; /* Apply bold style */
+    color: #f6f0f0; /* Change text color */
+    text-transform: uppercase;
+    margin-bottom: -50px; /* Convert text to uppercase */
+}
+
+#objectives {
+    margin-bottom: 450px; /* Add margin at the bottom of the Objectives section */
+}
+
+/* About Section */
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Align items vertically */
+    /* Occupy full height of the parent */
+}
+
+.about-image {
+    text-align: center; /* Center the image */
+}
+
+.about-logo {
+    max-width: 500px; /* Adjust the maximum width of the logo */
+    margin-right: 90px;
+    margin: center;
+    justify-content: center;
+    /* Add some spacing between the logo and content */
+}
+
+.about-content {
+    flex: 1; /* Allow the content to grow and fill remaining space */
+}
+
+.about-content p {
+    margin: 50;
+    line-height: 1.5; /* Remove default margin of paragraph */
+    color: white; /* Set paragraph text color to white */
+    font-size: 18px; /* Increase font size of the paragraph */
+}
+
+.register {
+    text-align: center;
+}
+
+.register h2,
+.register p {
+    margin-right: 100px;
+    border-right: 50px;
+}
+
+.register a {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Contact Section */
+
+#contact {
+    margin-top: 180px; /* Add margin at the top of the Contact section */
+}
+
+.contact-title {
+    margin-bottom: 20px; /* Add some spacing between title and boxes */
+}
+
+.contact-box-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center; /* Distribute items evenly along the main axis */
+}
+
+.contact-box {
+    width: 300px;
+    height: 150px;
+    background-color: #ccc;
+    text-align: center;
+    line-height: 100px;
+    font-size: 15px;
+    margin: 5px; /* Add some spacing between boxes */
+}
+
+/* Responsive styles */
+
+@media screen and (max-width: 768px) {
+    .objective-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .box {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .objectives-text {
+        width: 100%; /* Full width on smaller screens */
+        margin-bottom: 20px; /* Add margin at the bottom */
+    }
+
+    .about-logo {
+        max-width: 100%; /* Full width on smaller screens */
+        margin-right: 0; /* Remove right margin */
+    }
+
+    .register h2,
+    .register p {
+        margin-right: 0; /* Remove right margin */
+    }
+}
